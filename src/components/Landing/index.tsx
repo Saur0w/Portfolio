@@ -28,6 +28,12 @@ export default function Landing() {
                     <h1>Saurow</h1>
                     <p>I design and develop immersive web experiences that feel intuitive, memorable, and alive.</p>
                 </div>
+                <div className={styles.scroll}>
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="29" stroke="white" strokeWidth="2"/>
+                        <path d="M29.2929 41.7071C29.6834 42.0976 30.3166 42.0976 30.7071 41.7071L37.0711 35.3431C37.4616 34.9526 37.4616 34.3195 37.0711 33.9289C36.6805 33.5384 36.0474 33.5384 35.6569 33.9289L30 39.5858L24.3431 33.9289C23.9526 33.5384 23.3195 33.5384 22.9289 33.9289C22.5384 34.3195 22.5384 34.9526 22.9289 35.3431L29.2929 41.7071ZM30 18L29 18L29 41L30 41L31 41L31 18L30 18Z" fill="white"/>
+                    </svg>
+                </div>
             </div>
             <div className={styles.right}>
 
