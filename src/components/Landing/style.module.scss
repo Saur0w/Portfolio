@@ -37,7 +37,7 @@
 
             h1 {
                 font-family: "Playfair Display", serif;
-                font-size: clamp(60px, 7vw, 150px); 
+                font-size: 180px; 
                 line-height: 1;
                 margin: 0;
             }
@@ -87,25 +87,25 @@
             img {
                 object-fit: cover;
             }
-            &:nth-of-type(1){
+            &:nth-of-type(1) {
                 height: 427px;
                 width: 645px;
                 z-index: 11;
             }
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
                 top: 30vh;
                 height: 355px;
                 width: 554px;
                 z-index: 40;
             }
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
                 right: 32vw;
                 top: 500px;
                 height: 320px;
                 width: 500px;
                 z-index: 30;
             }
-            &:nth-of-type(4){
+            &:nth-of-type(4) {
                 height: 60vh;
                 width: 50vh;
                 z-index: 20;
