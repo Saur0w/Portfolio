@@ -4,6 +4,7 @@ import styles from "./style.module.scss";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import Image from "next/image";
 
 gsap.registerPlugin(useGSAP);
 
@@ -12,10 +13,11 @@ type ImageData = {
 };
 
 const images: ImageData[] = [
-    { src: "/images/sand.jpg" },
+    { src: "/images/arch.jpg" },
     { src: "/images/mountain.jpg" },
+    { src: "/images/sand.jpg" },
     { src: "/images/water.jpg" },
-    { src: "/images/arch.jpg" }
+    
 ];
 
 export default function Landing() {
@@ -36,7 +38,24 @@ export default function Landing() {
                 </div>
             </div>
             <div className={styles.right}>
-
+                <div className={styles.images}>
+                   {images.map((image, i) => (
+                        <div key={`img_${i}`} className={styles.imageContainer}>
+                            <Image 
+                                src={image.src}
+                                alt={`Portfolio abstract scene ${i + 1}`}
+                                fill 
+                                priority={i === 0}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div className={styles.text}>
+                    <h4>Design with Purpose</h4>
+                    <svg width="66" height="2" viewBox="0 0 66 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.0076914" y1="0.499937" x2="65.0077" y2="1.49994" stroke="white"/>
+                    </svg>
+                </div>
             </div>
         </section>
     );
