@@ -2,11 +2,15 @@
     height: 100vh;
     width: 100vw;
     background-color: #1B1B1B;
+    padding: 200px;
     .left {
         .text {
-            max-width: 659px;
+            max-width: 600px;
             p {
+                font-family: "Inter";
                 color: #fff;
+                font-size: 32px;
+                line-height: 130%;
             }
         }
     }
